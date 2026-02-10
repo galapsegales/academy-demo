@@ -3,3 +3,45 @@
 
 /* Header */
 
+.top__cta {
+    background-color: $violet;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    
+    &--bar {
+        text-decoration: none;
+        color: $black;
+
+        >p {
+            font-family: $font-secondary;
+            font-size: 1.2rem;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    } 
+}
+
+.hero-card {
+    padding: 1rem 1rem 0 1rem;
+
+
+    &__header {
+        overflow-y: visible !important;
+
+        .nav-principal {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+   }
+
+   &__logo {
+    max-width: 3.5rem;
+    min-width: 3rem;
+   }
+}
