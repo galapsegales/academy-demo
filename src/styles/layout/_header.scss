@@ -23,25 +23,33 @@
     } 
 }
 
-.hero-card {
-    padding: 1rem 1rem 0 1rem;
 
+.header {
+    padding: 5rem 2rem 0 2rem;
+    overflow-y: visible !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: padding 0.3s ease;
 
-    &__header {
-        overflow-y: visible !important;
+    &.scrolled {
+        padding-top: 1rem;
+    }
 
-        .nav-principal {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-   }
+    .nav-principal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-   &__logo {
+    &__logo {
     max-width: 3.5rem;
     min-width: 3rem;
    }
 }
+
+   
+
