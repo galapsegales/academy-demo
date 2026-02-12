@@ -3,3 +3,18 @@
 
 /* Buttons */
 
+.team-card__button {
+    @include button($blue, $black, $white);
+}
+
+.cursos-card__button {
+    @include button($violet, $black, $black);
+}
+
+.cursos-card__button--fullstack {
+    @include button($light-yellow, $black, $black)
+}
+
+.cursos-card__button--ia {
+    @include button($blue, $black, $black)
+}
