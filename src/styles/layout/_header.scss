@@ -1,5 +1,6 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
+@use 'sass:color';
 
 /* Header */
 
@@ -8,17 +9,21 @@
     height: 3rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
     
     &--bar {
         text-decoration: none;
         color: $black;
+        display: block;
+        width: 100%;
 
         >p {
             font-family: $font-secondary;
             font-size: 1.2rem;
             font-weight: 700;
             white-space: nowrap;
-            overflow: hidden;
+            display: inline-block;
+            animation: scroll-text 20s linear infinite;
         }
     } 
 }
@@ -46,10 +51,75 @@
     }
 
     &__logo {
-    max-width: 3.5rem;
-    min-width: 3rem;
-   }
+        max-width: 3.5rem;
+        min-width: 3rem;
+    
+        &--right {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+
+            > img {
+                transition: transform 0.3s ease;
+                display: block;
+            }
+
+            .nav-desplegable {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                min-width: 200px;
+                z-index: 10;
+
+                > ul {
+                    @include reset-list;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 0.6rem;
+                    padding: 1rem;
+
+                    > li {
+                        background-color: $white;
+                        border: 2px solid $black;
+                        border-radius: 1.5rem;
+                        padding: 0.8rem 1.2rem;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: translateY(-2px);
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                        }
+
+                        > a {
+                            color: $black;
+                            font-family: $font-secondary;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            display: block;
+                            text-transform: uppercase;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+
+            &:hover, &:focus-within {
+                > img {
+                transform: rotate(45deg);
+                }
+
+                .nav-desplegable {
+                    display: block;
+                }
+            }
+        }
+    }
 }
+
 
    
 

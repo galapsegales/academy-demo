@@ -1,1 +1,67 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
 /* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    &__social {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+
+        >a {
+            background-color: $white;
+            border-radius: 2rem;
+            padding: 2rem;
+
+            &:hover {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    &__info {
+        background-color: $orange;
+        padding: 2rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--logo {
+            width: 35%;
+
+            &_img {
+                width: 80%;
+            }
+        }
+
+        .container_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--aviso {
+            text-decoration: none;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 1.5rem;
+        }
+
+        &--copy {
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+
