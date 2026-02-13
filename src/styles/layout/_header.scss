@@ -56,12 +56,20 @@
     
         &--right {
             position: relative;
-            cursor: pointer;
             display: inline-block;
 
-            > img {
-                transition: transform 0.3s ease;
+            .menu-toggle {
+                display: none;
+            }
+
+            .menu-icon {
+                cursor: pointer;
                 display: block;
+
+                > img {
+                    transition: transform 0.3s ease;
+                    display: block;
+                }
             }
 
             .nav-desplegable {
@@ -107,13 +115,27 @@
                 }
             }
 
-            &:hover, &:focus-within {
-                > img {
-                transform: rotate(45deg);
+            // Cuando el checkbox está marcado (menú abierto)
+            .menu-toggle:checked {
+                ~ .menu-icon img {
+                    transform: rotate(45deg);
                 }
 
-                .nav-desplegable {
+                ~ .nav-desplegable {
                     display: block;
+                }
+            }
+
+            // Desktop: hover
+            @media (min-width: $bp-tablet) {
+                &:hover, &:focus-within {
+                    .menu-icon img {
+                        transform: rotate(45deg);
+                    }
+
+                    .nav-desplegable {
+                        display: block;
+                    }
                 }
             }
         }
