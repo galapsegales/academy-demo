@@ -43,3 +43,10 @@ dist/
 
 # OS
 Thumbs.db
+
+# Pencil design files
+design.pen
+*.pen
+
+# Pencil generated images
+images/
