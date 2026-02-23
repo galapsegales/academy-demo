@@ -8,6 +8,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         quienessomos: resolve(__dirname, 'quienessomos.html'),
+        contacto: resolve(__dirname, 'contacto.html'),
+        cursos: resolve(__dirname, 'cursos.html'),
+        blog: resolve(__dirname, 'blog.html'),
       },
     },
   },

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cursos | Descubre nuestras formaciones</title>
+    <meta name="description" content="Explora todos los cursos de la academia. Fullstack, IA, Ciberseguridad y más">
+    <meta name="author" content="Gala P Segales" />
+
+  <!-- FAVICON OPTIONS -->
+    <link rel="icon" type="image/png" href="src/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/img/favicon.svg" />
+    <link rel="shortcut icon" href="src/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CBlocks" />
+    <link rel="manifest" href="src/img/site.webmanifest" />
+    
+
+  <link rel="stylesheet" href="./src/styles/main.scss" />
+
+  </head>
+
+  <body class="page-cursos">
+    <aside class="top__cta">
+      <a class="top__cta--bar" href="#">
+        <p> LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS ·</p>
+      </a>   
+    </aside>
+    
+    <header class="header">
+      <nav class="nav-principal">
+        <div class="header__logo header__logo--left">
+          <a href="index.html"><img src="src/img/nav-logo-circle.svg" alt="CB Logo"></a>
+        </div>
+        <div class="header__logo header__logo--right">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">
+            <img src="src/img/nav-icon.svg" alt="Menu Icon">
+          </label>
+          <div class="nav-desplegable">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="quienessomos.html">Quiénes Somos</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Registro</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+
+        <main>
+            <section class="cursos-section">
+                <div class="cursos-section__header">
+                    <div class="cursos-section__title">
+                        <h3 class="cursos-section__title-text">NUESTROS<br><span>CURSOS</span></h3>
+                        <img src="src/img/enfatic-open.svg" alt="" class="cursos-section__title-decoration">
+                    </div>
+                    <p class="cursos-section__subtitle">Programas completos diseñados para convertirte en un profesional tech</p>
+                </div>
+
+                <div class="cursos-section__grid">
+                    
+                    <!-- Curso 1: Full Stack -->
+                    <article class="curso-card curso-card--fullstack">
+                        <div class="curso-card__content">
+                            <h4 class="curso-card__title">
+                                Máster en<br><span>Desarrollo Web<br>Full Stack</span> 
+                            </h4>
+
+                            <p class="curso-card__description">
+                                La formación donde aprenderás todo lo que necesitas para convertirte en DESARROLLADOR FULL-STACK, aunque partas desde cero en el mundo de la programación.
+                            </p>
+
+                            <div class="curso-card__features">
+                                <div class="feature-tag">HTML & CSS</div>
+                                <div class="feature-tag">JavaScript</div>
+                                <div class="feature-tag">React</div>
+                                <div class="feature-tag">Node.js</div>
+                                <div class="feature-tag">MySQL</div>
+                                <div class="feature-tag">Git</div>
+                                <div class="feature-tag">Python</div>
+                                <div class="feature-tag">Django</div>
+                            </div>
+
+                            <a href="contacto.html" class="cursos-card__button--fullstack btn">
+                                <span>MÁS DETALLES</span>
+                                <img src="src/img/i-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Curso 2: IA -->
+                    <article class="curso-card curso-card--ia">
+                        <div class="curso-card__content">
+                            <h4 class="curso-card__title">
+                                Máster en<br><span>Inteligencia<br>Artificial</span> 
+                            </h4>
+
+                            <p class="curso-card__description">
+                                La formación donde aprenderás todo lo que necesitas para convertirte en PROGRAMADOR ESPECIALIZADO en IA, y multiplicar tu valor en el mercado laboral.
+                            </p>
+
+                            <div class="curso-card__features">
+                                <div class="feature-tag">Python</div>
+                                <div class="feature-tag">TensorFlow</div>
+                                <div class="feature-tag">PyTorch</div>
+                                <div class="feature-tag">Machine Learning</div>
+                                <div class="feature-tag">Deep Learning</div>
+                                <div class="feature-tag">NLP</div>
+                            </div>
+
+                            <a href="contacto.html" class="cursos-card__button--ia btn">
+                                <span>MÁS DETALLES</span>
+                                <img src="src/img/i-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Curso 3: Ciberseguridad -->
+                    <article class="curso-card curso-card--cyber">
+                        <div class="curso-card__content">
+                            <h4 class="curso-card__title">
+                                Máster en<br><span>Ciberseguridad<br>& Hacking</span> 
+                            </h4>
+
+                            <p class="curso-card__description">
+                                Conviértete en experto en seguridad informática. Aprende a proteger sistemas, detectar vulnerabilidades y realizar ethical hacking profesional.
+                            </p>
+
+                            <div class="curso-card__features">
+                                <div class="feature-tag">Pentesting</div>
+                                <div class="feature-tag">Linux</div>
+                                <div class="feature-tag">Kali Linux</div>
+                                <div class="feature-tag">Network Security</div>
+                                <div class="feature-tag">OWASP</div>
+                                <div class="feature-tag">Ethical Hacking</div>
+                            </div>
+
+                            <a href="contacto.html" class="curso-card__button--ciber btn">
+                                <span>MÁS DETALLES</span>
+                                <img src="src/img/i-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Curso 4: Blockchain -->
+                    <article class="curso-card curso-card--blockchain">
+                        <div class="curso-card__content">
+                            <h4 class="curso-card__title">
+                                Máster en<br><span>Blockchain<br>& Web3</span> 
+                            </h4>
+
+                            <p class="curso-card__description">
+                                Domina el desarrollo de contratos inteligentes, DApps y criptomonedas. Aprende Solidity, Ethereum y las tecnologías descentralizadas del futuro.
+                            </p>
+
+                            <div class="curso-card__features">
+                                <div class="feature-tag">Solidity</div>
+                                <div class="feature-tag">Ethereum</div>
+                                <div class="feature-tag">Smart Contracts</div>
+                                <div class="feature-tag">Web3.js</div>
+                                <div class="feature-tag">NFTs</div>
+                                <div class="feature-tag">DeFi</div>
+                            </div>
+
+                            <a href="contacto.html" class="curso-card__button--block btn">
+                                <span>MÁS DETALLES</span>
+                                <img src="src/img/i-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <aside class="footer__info">
+            <a class="footer__info--logo" href="index.html">
+                <img src="src/img/nav-logo.svg" alt="" class="footer__info--logo_img">
+            </a>
+            <div class="container_info">
+                <a class="footer__info--aviso" href="#">
+                Aviso Legal
+                </a>
+
+                <p class="footer__info--copy">
+                &copy; Conquer Blocks 2026
+                </p>
+            </div>
+
+            </aside>
+
+            <aside class="footer__social">
+            <a href="#" class="footer__social--instagram">
+                <img class="footer__social_i" src="src/img/i-instagram.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--youtube">
+                <img class="footer__social_i" src="src/img/i-youtube.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--discord">
+                <img class="footer__social_i" src="src/img/i-discord.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--x">
+                <img class="footer__social_i" src="src/img/i-x.svg" alt="">
+            </a>
+            </aside>
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+    
+  </body>
+</html>

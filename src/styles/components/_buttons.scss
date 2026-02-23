@@ -21,6 +21,14 @@
     @include button($blue, $black, $black)
 }
 
+.curso-card__button--ciber {
+    @include button($green, $black, $black)
+}
+
+.curso-card__button--block {
+    @include button($purple, $black, $black)
+}
+
 .blog1-card__button {
     @include button($orange, $black, $black);
     z-index: 1;
@@ -28,6 +36,11 @@
 
 .blog2-card__button {
     @include button($green, $black, $black);
+    z-index: 1;
+}
+
+.blog-post__button {
+    @include button($yellow, $black, $black);
     z-index: 1;
 }
 
