@@ -30,3 +30,8 @@
     @include button($green, $black, $black);
     z-index: 1;
 }
+
+.contacto-form__button,
+.contacto-card__button {
+    @include button-contacto;
+}

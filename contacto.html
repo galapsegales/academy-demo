@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto | Hablemos de tu futuro</title>
+    <meta name="description" content="Ponte en contacto con nosotros. Formulario, agenda una llamada o visítanos">
+    <meta name="author" content="Gala P Segales" />
+
+  <!-- FAVICON OPTIONS -->
+    <link rel="icon" type="image/png" href="src/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/img/favicon.svg" />
+    <link rel="shortcut icon" href="src/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CBlocks" />
+    <link rel="manifest" href="src/img/site.webmanifest" />
+    
+
+  <link rel="stylesheet" href="./src/styles/main.scss" />
+
+  </head>
+
+  <body class="page-contacto">
+    <aside class="top__cta">
+      <a class="top__cta--bar" href="#">
+        <p> LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS ·</p>
+      </a>   
+    </aside>
+    
+    <header class="header">
+      <nav class="nav-principal">
+        <div class="header__logo header__logo--left">
+          <a href="index.html"><img src="src/img/nav-logo-circle.svg" alt="CB Logo"></a>
+        </div>
+        <div class="header__logo header__logo--right">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">
+            <img src="src/img/nav-icon.svg" alt="Menu Icon">
+          </label>
+          <div class="nav-desplegable">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="quienessomos.html">Quiénes Somos</a></li>
+              <li><a href="#">Cursos</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Registro</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+
+        <main class="contacto-main">
+            <section class="contacto-section">
+                <div class="contacto-section__header">
+                    <div class="contacto-section__title">
+                        <h3 class="contacto-section__title-text">TENGAMOS UN<br><span>CONTACTO</span></h3>
+                        <img src="src/img/enfatic-open.svg" alt="" class="contacto-section__title-decoration">
+                    </div>
+                    <p class="contacto-section__subtitle">Estamos aquí para ayudarte a dar el próximo paso en tu carrera tech</p>
+                </div>
+
+                <div class="contacto-section__cards">
+                    
+                    <article class="contacto-card contacto-card--form">
+                        <div class="contacto-card__header">
+                            <h4 class="contacto-card__title">ENVÍANOS UN<br><span>MENSAJE</span></h4>
+                        </div>
+                        <form class="contacto-form" method="POST">
+                            <div class="contacto-form__group">
+                                <label for="nombre" class="contacto-form__label">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="contacto-form__input" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="contacto-form__group">
+                                <label for="email" class="contacto-form__label">Email</label>
+                                <input type="email" id="email" name="email" class="contacto-form__input" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="contacto-form__group">
+                                <label for="mensaje" class="contacto-form__label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" class="contacto-form__textarea" placeholder="Cuéntanos cómo podemos ayudarte..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="contacto-form__button">ENVIAR MENSAJE</button>
+                        </form>
+                    </article>
+
+                    <!-- Card 2: Agendar llamada -->
+                    <article class="contacto-card contacto-card--call">
+                        <div class="contacto-card__header">
+                            <h4 class="contacto-card__title">AGENDA UNA<br><span>LLAMADA</span></h4>
+                        </div>
+                        <div class="contacto-card__content">
+                            <p class="contacto-card__description">
+                                ¿Prefieres hablar directamente? Agenda una videollamada con nuestro equipo de admisiones y resuelve todas tus dudas.
+                            </p>
+                            <div class="contacto-card__benefits">
+                                <div class="benefit-item">
+                                    <span class="benefit-item__icon">✓</span>
+                                    <span class="benefit-item__text">Sesión personalizada de 30 min</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-item__icon">✓</span>
+                                    <span class="benefit-item__text">Asesoramiento sin compromiso</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-item__icon">✓</span>
+                                    <span class="benefit-item__text">Conoce nuestros programas</span>
+                                </div>
+                            </div>
+                            <a href="#" class="contacto-card__button">RESERVAR LLAMADA</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Mapa -->
+                    <article class="contacto-card contacto-card--map">
+                        <div class="contacto-card__header">
+                            <h4 class="contacto-card__title">ENCUÉNTRANOS<br><span>AQUÍ</span></h4>
+                        </div>
+                        <div class="contacto-card__content">
+                            <div class="contacto-map">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5865.984209532203!2d-75.2138249854398!3d38.763958195002054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b90d93fd3829%3A0x6bfd401d90b6d8f9!2s16192%20Coastal%20Hwy%2C%20Lewes%2C%20DE%2019958%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1771842038110!5m2!1ses!2ses" 
+                                    class="contacto-map__iframe"
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="contacto-info">
+                                <div class="contacto-info__item">
+                                    <strong>Dirección:</strong>
+                                    <p>16192 Coastal Hwy, Lewes<br>DE 19958, EE.UU.</p>
+                                </div>
+                                <div class="contacto-info__item">
+                                    <strong>Horario:</strong>
+                                    <p>Lunes - Viernes: 9:00 - 20:00<br>Sábados: 10:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <aside class="footer__info">
+            <a class="footer__info--logo" href="index.html">
+                <img src="src/img/nav-logo.svg" alt="" class="footer__info--logo_img">
+            </a>
+            <div class="container_info">
+                <a class="footer__info--aviso" href="#">
+                Aviso Legal
+                </a>
+
+                <p class="footer__info--copy">
+                &copy; Conquer Blocks 2026
+                </p>
+            </div>
+
+            </aside>
+
+            <aside class="footer__social">
+            <a href="#" class="footer__social--instagram">
+                <img class="footer__social_i" src="src/img/i-instagram.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--youtube">
+                <img class="footer__social_i" src="src/img/i-youtube.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--discord">
+                <img class="footer__social_i" src="src/img/i-discord.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--x">
+                <img class="footer__social_i" src="src/img/i-x.svg" alt="">
+            </a>
+            </aside>
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+    
+  </body>
+</html>
