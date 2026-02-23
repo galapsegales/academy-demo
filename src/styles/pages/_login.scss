@@ -1,0 +1,157 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+/* Página Login */
+
+.login-main {
+    padding-bottom: 0;
+}
+
+.login-section {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 2rem;
+
+        &-text {
+            color: $green;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 220%;
+            text-align: center;
+
+            >span {
+                font-size: 5rem;
+            }
+        }
+
+        &-decoration {
+            position: absolute;
+            width: 10rem;
+            top: -30%;
+            right: -45%;
+            z-index: -1;
+        }
+    }
+
+    &__subtitle {
+        color: $white;
+        width: 90%;
+        font-size: 1.35rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
+
+.login-card {
+    background-color: $yellow;
+    border-radius: 1.5rem;
+    border: 2px solid $black;
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $black;
+    }
+
+    &__input {
+        padding: 0.85rem 1rem;
+        border: 2px solid $black;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: $font-secondary;
+        background-color: $white;
+        color: $black;
+        transition: border-color 0.3s ease;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $green;
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -0.5rem;
+    }
+
+    &__forgot {
+        font-size: 0.9rem;
+        color: $black;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__button {
+        @include button($green, $black, $black);
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        align-self: center;
+    }
+
+    &__register {
+        text-align: center;
+        font-family: $font-secondary;
+        color: $black;
+        font-size: 0.95rem;
+
+        a {
+            color: $black;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

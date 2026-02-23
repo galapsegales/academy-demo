@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login | Conquer Blocks</title>
+    <meta name="description" content="Accede a tu cuenta en Conquer Blocks Academy">
+    <meta name="author" content="Gala P Segales" />
+
+  <!-- FAVICON OPTIONS -->
+    <link rel="icon" type="image/png" href="src/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/img/favicon.svg" />
+    <link rel="shortcut icon" href="src/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CBlocks" />
+    <link rel="manifest" href="src/img/site.webmanifest" />
+    
+
+  <link rel="stylesheet" href="./src/styles/main.scss" />
+
+  </head>
+
+  <body class="page-login">
+    <aside class="top__cta">
+      <a class="top__cta--bar" href="#">
+        <p> LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS · LA ACADEMIA DEL FUTURO · DESCUBRE NUESTROS CURSOS ·</p>
+      </a>   
+    </aside>
+    
+    <header class="header">
+      <nav class="nav-principal">
+        <div class="header__logo header__logo--left">
+          <a href="index.html"><img src="src/img/nav-logo-circle.svg" alt="CB Logo"></a>
+        </div>
+        <div class="header__logo header__logo--right">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">
+            <img src="src/img/nav-icon.svg" alt="Menu Icon">
+          </label>
+          <div class="nav-desplegable">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="quienessomos.html">Quiénes Somos</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+
+        <main class="login-main">
+            <section class="login-section">
+                <div class="login-section__header">
+                    <div class="login-section__title">
+                        <h3 class="login-section__title-text"><br><span>LOGIN</span></h3>
+                    </div>
+                    <p class="login-section__subtitle">Accede a tu cuenta para continuar con tu aprendizaje</p>
+                </div>
+
+                <div class="login-section__container">
+                    <article class="login-card">
+                        <form class="login-form" method="POST" action="#">
+                            <div class="login-form__group">
+                                <label for="email" class="login-form__label">Email</label>
+                                <input type="email" id="email" name="email" class="login-form__input" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="login-form__group">
+                                <label for="password" class="login-form__label">Contraseña</label>
+                                <input type="password" id="password" name="password" class="login-form__input" placeholder="••••••••" required>
+                            </div>
+                            <div class="login-form__options">
+                                <a href="#" class="login-form__forgot">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <button type="submit" class="login-form__button">INICIAR SESIÓN</button>
+                            <div class="login-form__register">
+                                <p>¿No tienes cuenta? <a href="contacto.html">Tramita el alta</a></p>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <aside class="footer__info">
+            <a class="footer__info--logo" href="index.html">
+                <img src="src/img/nav-logo.svg" alt="" class="footer__info--logo_img">
+            </a>
+            <div class="container_info">
+                <a class="footer__info--aviso" href="avisolegal.html">
+                Aviso Legal
+                </a>
+
+                <p class="footer__info--copy">
+                &copy; Conquer Blocks 2026
+                </p>
+            </div>
+
+            </aside>
+
+            <aside class="footer__social">
+            <a href="#" class="footer__social--instagram">
+                <img class="footer__social_i" src="src/img/i-instagram.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--youtube">
+                <img class="footer__social_i" src="src/img/i-youtube.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--discord">
+                <img class="footer__social_i" src="src/img/i-discord.svg" alt="">
+            </a>
+
+            <a href="#" class="footer__social--x">
+                <img class="footer__social_i" src="src/img/i-x.svg" alt="">
+            </a>
+            </aside>
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+    
+  </body>
+</html>
