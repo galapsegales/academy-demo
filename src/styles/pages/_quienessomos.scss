@@ -8,7 +8,7 @@
     border-radius: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
-    padding: 4rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
         margin-top: 3rem;
 
         &-text {
-            color: $green;
+            color: $black;
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 220%;
@@ -40,8 +40,8 @@
         &-decoration {
             position: absolute;
             width: 10rem;
-            top: -38%;
-            left: -33%;
+            top: -20%;
+            left: -37%;
         }
     }
 
@@ -63,7 +63,8 @@
 
 .profesor-card {
     border-radius: 1.5rem;
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    border: 2px solid $black;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +74,7 @@
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
-        border: 3px solid $black;
+        border: 2px solid $black;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -89,25 +90,29 @@
     }
 
     &__nombre {
-        color: $black;
-        font-size: 1.8rem;
+        color: $white;
+        font-size: 2rem;
         font-weight: 400;
-        line-height: 130%;
+        line-height: 160%;
         text-align: center;
 
         >span {
-            font-size: 3rem;
+            color: $black;
+            font-size: 4rem;
             font-weight: bold;
         }
     }
 
     &__rol {
+        border: 2px solid black;
+        box-shadow: 0px 6px 0px -2px $black;
         color: $black;
         font-family: $font-secondary;
         font-size: 1.1rem;
         font-weight: 600;
         text-align: center;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem;
+        background-color: white;
     }
 
     &--bienvenido {
@@ -118,8 +123,12 @@
         background-color: $violet;
     }
 
-    &--chema {
+    &--elena {
         background-color: $green;
+    }
+
+    &--chema {
+        background-color: $light-yellow;
     }
 }
 
