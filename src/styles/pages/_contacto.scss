@@ -7,12 +7,6 @@
     .container {
         background-color: transparent;
     }
-
-    @include breakpoint(tablet) {
-        .footer {
-            padding: 0 2rem;
-        }
-    }
 }
 
 .contacto-main {
@@ -102,7 +96,6 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto auto;
             gap: 2rem;
-            padding: 0 2rem;
         }
     }
 }

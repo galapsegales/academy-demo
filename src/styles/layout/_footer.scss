@@ -64,6 +64,7 @@
     }
 
     @include breakpoint(tablet) {
+        margin: 0 2rem;
         &__social {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;

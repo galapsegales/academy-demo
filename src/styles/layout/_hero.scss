@@ -76,6 +76,8 @@
     }
 
     @include breakpoint(tablet) {
+        margin: 3rem 2rem;
+        
         &__content {
             &--title {
                 >h2 {

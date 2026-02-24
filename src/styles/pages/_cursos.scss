@@ -61,6 +61,7 @@
     }
 
     @include breakpoint(tablet) {
+        margin-top: 3rem;
         &__title {
             &-text {
                 font-size: 3rem;

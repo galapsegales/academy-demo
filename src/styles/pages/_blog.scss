@@ -81,10 +81,6 @@
         &__subtitle {
             font-size: 2rem;
         }
-
-        &__posts {
-            padding: 0 4rem;
-        }
     }
 }
 
@@ -192,5 +188,17 @@
 
     @include breakpoint(tablet) {
         padding: 3rem 3.5rem;
+
+        &__title {
+            font-size: 3.5rem;
+        }
+
+        &__excerpt {
+            font-weight: 700;
+        }
+
+        &__video {
+            max-width: calc(560px + 4rem);
+        }
     }
 }

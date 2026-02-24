@@ -142,6 +142,10 @@
     }
 
     @include breakpoint(tablet) {
+        .nav-principal {
+            margin: 2rem 2rem 0 2rem;
+        }
+
         &__logo {
             max-width: 4.5rem;
             min-width: 4rem;
