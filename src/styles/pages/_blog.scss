@@ -57,6 +57,35 @@
         align-items: center;
         gap: 3rem;
     }
+
+    @include breakpoint(tablet) {
+        &__title {
+            &-text {
+                text-align: center;
+                font-size: 3rem;
+                line-height: 190%;
+
+                >span {
+                    font-size: 9rem;
+                }
+            }
+
+            &-decoration {
+                width: 12rem;
+                top: -33%;
+                right: -35%;
+
+            }
+        }
+
+        &__subtitle {
+            font-size: 2rem;
+        }
+
+        &__posts {
+            padding: 0 4rem;
+        }
+    }
 }
 
 /* Blog Post */
@@ -159,5 +188,9 @@
 
     &--green {
         background-color: $green;
+    }
+
+    @include breakpoint(tablet) {
+        padding: 3rem 3.5rem;
     }
 }

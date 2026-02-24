@@ -7,6 +7,12 @@
     .container {
         background-color: transparent;
     }
+
+    @include breakpoint(tablet) {
+        .footer {
+            padding: 0 2rem;
+        }
+    }
 }
 
 .contacto-main {
@@ -70,6 +76,35 @@
         gap: 2rem;
         padding: 0;
     }
+
+    @include breakpoint(tablet) {
+        &__title {
+            &-text {
+                font-size: 3.5rem;
+                line-height: 150%;
+
+                >span {
+                    font-size: 7rem;
+                }
+            }
+
+            &-decoration {
+                width: 12rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 2rem;
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+    }
 }
 
 .contacto-card {
@@ -132,6 +167,20 @@
     &--map {
         background-color: $green;
     }
+
+    @include breakpoint(tablet) {
+        &__content {
+            flex: 1;
+        }
+
+        &__button {
+            margin-top: auto;
+        }
+
+        &--map {
+            grid-column: span 2;
+        }
+    }
 }
 
 
@@ -182,6 +231,14 @@
     &__button {
         // Estilos definidos en _buttons.scss usando el mixin button-contacto
         margin-top: 0.5rem;
+    }
+
+    @include breakpoint(tablet) {
+        flex: 1;
+
+        &__button {
+            margin-top: auto;
+        }
     }
 }
 
@@ -250,6 +307,10 @@
             line-height: 1.6;
         }
     }
+
+    @include breakpoint(tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+    }
 }
-
-

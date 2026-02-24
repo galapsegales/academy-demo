@@ -59,6 +59,30 @@
         flex-direction: column;
         gap: 2rem;
     }
+
+    @include breakpoint(tablet) {
+        &__title {
+            &-text {
+                font-size: 3rem;
+                line-height: 150%;
+
+                >span {
+                    font-size: 7rem;
+                }
+            }
+
+            &-decoration {
+                width: 12rem;
+            }
+        }
+
+        &__profesores {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
 }
 
 .profesor-card {
