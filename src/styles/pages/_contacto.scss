@@ -28,6 +28,11 @@
         align-items: center;
         gap: 1rem;
         padding: 0 1rem;
+
+        @include breakpoint(desktop) {
+            padding-top: 4rem;
+        }
+
     }
 
     &__title {
@@ -52,6 +57,11 @@
             top: -20%;
             left: -25%;
             z-index: -1;
+
+            @include breakpoint(desktop) {
+                animation: latido-suave 2s ease-in-out infinite;
+                display: inline-block;
+            }
         }
     }
 

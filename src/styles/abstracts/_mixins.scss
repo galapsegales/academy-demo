@@ -59,7 +59,7 @@
 
   span {
     line-height: 1;
-    font-family: $font-stack; // O la fuente "bold" que uses
+    font-family: $font-stack;
     font-weight: 400;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -125,6 +125,15 @@
   }
   100% {
     transform: translateX(-33.33%);
+  }
+}
+
+@keyframes latido-suave {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
   }
 }
 

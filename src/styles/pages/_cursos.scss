@@ -14,11 +14,19 @@
     align-items: center;
     gap: 3rem;
 
+    @include breakpoint(desktop) {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+
     &__header {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+
+        @include breakpoint(desktop) {
+            padding-top: 4rem;
+        }
     }
 
     &__title {
@@ -42,6 +50,11 @@
             width: 10rem;
             top: -20%;
             left: -33%;
+
+            @include breakpoint(desktop) {
+                animation: latido-suave 2s ease-in-out infinite;
+                display: inline-block;
+            }
         }
     }
 
@@ -141,7 +154,7 @@
         margin-top: 0.5rem;
     }
 
-    /* Colores para cada curso */
+    /* Colors */
     &--fullstack {
         background-color: $blue;
     }

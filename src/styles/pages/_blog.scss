@@ -17,6 +17,10 @@
         align-items: center;
         gap: 1rem;
         padding-bottom: 1rem;
+
+        @include breakpoint(desktop) {
+            padding-top: 5rem;
+        }
     }
 
     &__title {
@@ -38,6 +42,11 @@
             width: 10rem;
             top: -37%;
             right: -45%;
+
+            @include breakpoint(desktop) {
+                animation: latido-suave 2s ease-in-out infinite;
+                display: inline-block;
+            }
         }
     }
 
@@ -80,6 +89,15 @@
 
         &__subtitle {
             font-size: 2rem;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        &__posts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3rem;
         }
     }
 }
@@ -145,7 +163,7 @@
         max-width: 560px;
         margin: 1rem 0;
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        padding-bottom: 56.25%; /* 16:9 */
         overflow: hidden;
         border-radius: 1rem;
         border: 3px solid $black;
@@ -165,7 +183,7 @@
         z-index: 1;
     }
 
-    /* Colores para cada post */
+    /* Colors */
     &--yellow {
         background-color: $yellow;
     }
@@ -199,6 +217,26 @@
 
         &__video {
             max-width: calc(560px + 4rem);
+        }
+    }
+
+    @include breakpoint(desktop) {
+        height: 100%;
+        
+        &__content {
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        &__title {
+            min-height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__excerpt {
+            flex-grow: 1;
         }
     }
 }

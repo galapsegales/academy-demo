@@ -6,6 +6,7 @@
 .hero-card {
     background-color: $light-yellow;
     border-radius: 1.5rem;
+    overflow: hidden;
     margin-top: 1rem;
     padding: 4rem 1rem 0 1rem;
     
@@ -83,12 +84,80 @@
                 >h2 {
                     font-size: 2.3rem; 
                 }
+
+                &-img {
+                    @include breakpoint(desktop) {
+                        animation: latido-suave 2s ease-in-out infinite;
+                        display: inline-block;
+                    }
+                }
             }
 
             &--img {
                 margin-top: -10rem;
                 content: url('../../img/herobienve-tablet.png'); 
+
+                @include breakpoint(desktop) {
+                    content: url('../../img/herobienve-desktop.png');
+                    
+                }
             }
         }
     }
+    
+
+    @include breakpoint(tablethorizontal) {
+        padding: 2rem 0rem 0 3rem;
+        margin: 3rem 2rem 0 2rem;
+
+        &__content {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            position: relative;
+
+            &--title {
+                z-index: 1;
+                width: 50%;
+                justify-self: center;
+                align-self: center;
+
+                &-img {
+                    width: 140%;
+                    margin-left: 8rem;
+                }
+
+                >h2 {
+                    display: none;
+                }
+            }
+
+            &--img {
+                width: 70%;
+                margin-top: -25;
+            }
+
+            &--decoration {
+                width: 6rem;
+                z-index: 0;
+                
+                &-1 {
+                    top: -20%;
+                    left: -10%;
+                    z-index: 0;
+                }
+
+                &-2 {
+                    top: 70%;
+                    right: -40%;
+                }
+
+                &-3 {
+                    display: none;
+                }
+            }
+        }
+    }
+
 }
